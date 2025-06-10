@@ -17,10 +17,11 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
 }
 
@@ -29,7 +30,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* ESSENCIAL */
   gap: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -37,19 +37,21 @@ body {
 
 .contentp {
   background: transparent;
-  max-width: 800px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 5px;
-  padding: 4px;
+  padding: 20px;
   margin: 0 auto;
   box-shadow: 5px 7px 15px #000000b3;
+  box-sizing: border-box;
 }
 
 .label {
   justify-content: center;
   align-items: center;
-  margin: 10px 15px;
+  margin: 10px 10px;
   background-color: black;
-  padding: 30px 50px;
+  padding: 20px 30px;
   border-radius: 15px;
   box-shadow: 0px 5px 10px #00000080;
 
@@ -59,22 +61,28 @@ body {
     font-size: 15px;
   }
   & span {
+    min-height: 100px;
+    min-width: 100px;
     font-size: 70px;
+    text-align: center;
     transition: all 0.3s ease-in-out;
   }
 }
 
 @media screen and (max-width: 600px) {
   .label {
-    padding: 15px 20px;
+    padding: 10px 15px;
     margin: 5px;
   }
 
   .label span {
-    font-size: 35px;
+    font-size: 40px;
+    min-width: 70px;
+    min-height: 60px;
   }
 
   .label label {
+  
     font-size: 12px;
   }
 
