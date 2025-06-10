@@ -54,3 +54,23 @@ body{
   }
 }
 
+
+@media screen and (max-width: 600px) {
+  .contentf {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .label {
+    padding: 20px 30px;
+    margin: 5px 0;
+  }
+
+  .label span {
+    font-size: 40px;
+  }
+
+  .label label {
+    font-size: 13px;
+  }
+}
