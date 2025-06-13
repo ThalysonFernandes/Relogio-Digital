@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Relógio Digital - Thalyson Fernandes</title>
-</head>
-<body class="flexC">
- <div class="contentp">
-  <div class="contentf flexR">
-      <div class="label flexC" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Relógio Digital - Thalyson Fernandes</title>
+  </head>
+  <body class="flexC">
+    <header>
+      <h1>Relógio Digital</h1>
+      <ul class="flexR">
+        <li>
+          Opções
+          <a><img src="assets/icons/seta-para-baixo-branca.png"></a> 
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+        </li>
+      </ul>
+      
+    </header>
+    <div class="contentf flexR">
+      <div>
         <span id="horas" class="horas"></span>
-        <label>Horas</label>
-      </div>
-      <div class="label flexC">
+        <label>:</label>
         <span class="minutos" id="minutos"></span>
-        <label>Minutos</label>
-      </div>
-      <div class="label flexC">
+        <label>:</label>
         <span class="segundos" id="segundos"></span>
-        <label>Segundos</label>
+        <label></label>
       </div>
     </div>
-  </div>
-  <script src="./assets/script/script.js"></script>
-</body>
+    <script src="./assets/script/script.js"></script>
+  </body>
 </html>
-

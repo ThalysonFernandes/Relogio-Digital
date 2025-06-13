@@ -1,9 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+@font-face {
+  font-family: "Digital";
+  src: url(./../fonts/digital-7.regular.ttf);
+}
+
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --orange-dark-600: #fb8c00;
+  --orange-dark-900: #e65100;
+  --black: #0f0f0f;
+  --white: #f2f2f2;
+  --font-style: "Digital";
 }
 
 .flexC {
@@ -17,15 +30,45 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
+  background: black;
+  color: var(--orange-dark-900);
+  font-family: var(--font-style);
+}
+
+header{
+  display: flex;
+  align-self: flex-start;
+  width:100%;
+  background-color: rgba(128, 128, 128, 0.219);
+  padding: 30px;
+  color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  
+  & ul{
+    margin-right: 80px;
+  }
+  & li{
+    margin: 0 20px;
+    list-style: none;
+    font-size: 20px;
+    & img{
+      width: 20px;
+    }
+    & svg{
+      width: 20px;
+      fill: white;
+    }
+  }
 }
 
 .contentf {
+  margin-top: 200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,61 +76,9 @@ body {
   gap: 10px;
   width: 100%;
   box-sizing: border-box;
-}
 
-.contentp {
-  background: transparent;
-  width: 100%;
-  max-width: 700px;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 0 auto;
-  box-shadow: 5px 7px 15px #000000b3;
-  box-sizing: border-box;
-}
-
-.label {
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px;
-  background-color: black;
-  padding: 20px 30px;
-  border-radius: 15px;
-  box-shadow: 0px 5px 10px #00000080;
-
-  color: white;
-
-  & label {
-    font-size: 15px;
+  & div{
+    font-size: 150px;
   }
-  & span {
-    min-height: 100px;
-    min-width: 100px;
-    font-size: 70px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .label {
-    padding: 10px 15px;
-    margin: 5px;
-  }
-
-  .label span {
-    font-size: 40px;
-    min-width: 70px;
-    min-height: 60px;
-  }
-
-  .label label {
   
-    font-size: 12px;
-  }
-
-  .contentp {
-    max-width: 100%;
-    padding: 10px;
-  }
 }
